@@ -134,8 +134,10 @@ public class MainActivity extends AppCompatActivity {
 [Example Project](https://github.com/gzeinnumer/RoomJoinExample)
 
 - Preview
+
 |![](https://github.com/gzeinnumer/RoomJoinExample/blob/master/preview/example1.JPG)|
-|--|
+|---|
+
 ---
 
 ```
