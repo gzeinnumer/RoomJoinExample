@@ -52,7 +52,14 @@ public class Table2 {
 @Dao
 public interface Table1Dao {
 
-    @Query("SELECT table_1.id, table_1.name, table_2.id as id2, table_2.name as name2, table_2.table_1_id FROM table_1 LEFT JOIN table_2 ON table_2.table_1_id = table_1.id;")
+    @Query("SELECT " +
+     "table_1.id, " +
+      "table_1.name, " +
+       "table_2.id as id2, " +
+        "table_2.name as name2, " +
+         "table_2.table_1_id " +
+          "FROM table_1 " +
+           "LEFT JOIN table_2 ON table_2.table_1_id = table_1.id;")
     List<Table1_Table2> getJOin();
 
 }
@@ -127,8 +134,8 @@ public class MainActivity extends AppCompatActivity {
 [Example Project](https://github.com/gzeinnumer/RoomJoinExample)
 
 - Preview
-![](https://github.com/gzeinnumer/RoomJoinExample/blob/master/preview/example1.JPG)
-
+|![](https://github.com/gzeinnumer/RoomJoinExample/blob/master/preview/example1.JPG)|
+|--|
 ---
 
 ```
