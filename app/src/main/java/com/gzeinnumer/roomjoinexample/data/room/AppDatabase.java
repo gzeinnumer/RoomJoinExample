@@ -20,7 +20,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract Table1Dao sampleTable1Dao();
     public abstract Table2Dao sampleTable2Dao();
 
-    public static synchronized AppDatabase getInstance(Context context) {
+    public static AppDatabase getInstance(Context context) {
         return Room.databaseBuilder(context,AppDatabase.class, dbName)
                 .allowMainThreadQueries()
                 .build();
